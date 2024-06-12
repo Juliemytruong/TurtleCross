@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="607c6431-b182-4c4a-8865-a60621655ec7" name="Changes" comment="d" />
+    <list default="true" id="607c6431-b182-4c4a-8865-a60621655ec7" name="Changes" comment="d">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/turtle-crossing-start/car_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/turtle-crossing-start/car_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/turtle-crossing-start/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/turtle-crossing-start/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +28,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.car_manager.executor": "Run",
     "Python.main.executor": "Run",
     "Python.player.executor": "Run",
     "Python.scoreboard.executor": "Run",
