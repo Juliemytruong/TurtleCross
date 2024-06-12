@@ -20,10 +20,12 @@ screen.onkey(Crosser.move,"Up")
 
 game_is_on = True
 while game_is_on:
-    time.sleep(0.1)
-    screen.update()
-
     carA = CarManager()
+    for i in range (6):
+        time.sleep(0.1)
+        screen.update()
+        #carA.move_car()
+
     carA.create_turtle()
 
 
