@@ -11,6 +11,7 @@ class CarManager(Turtle):
     def __init__(self):
         super().__init__()
         self.group=[]
+        self.hideturtle()
 
     def create_turtle(self):
         #create turtle
@@ -20,6 +21,9 @@ class CarManager(Turtle):
         C_turtle.shape("square")
         C_turtle.penup()
         C_turtle.shapesize(1,3)
-        C_turtle.setposition(280,0)
+
+        loca=random.randint(-250,250)
+
+        C_turtle.setposition(280,loca)
         self.group.append(C_turtle)
 
