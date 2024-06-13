@@ -10,37 +10,25 @@ MOVE_INCREMENT = 10
 class CarManager(Turtle):
     def __init__(self):
         super().__init__()
-        self.group = []
-        self.hideturtle()
-        self.a=0
-
-
-    def create_turtle(self):
-        #create turtle
-        C_turtle=Turtle()
         colour=COLORS[random.randint(0,5)]
-        C_turtle.color(colour)
-        C_turtle.shape("square")
-        C_turtle.penup()
-        C_turtle.shapesize(1,3)
+        self.color(colour)
+        self.shape("square")
+        self.penup()
+        self.shapesize(1,3)
+        self.setheading(180)
+
+
+    def start_car(self):
+        #create turtle
 
         loca=random.randint(-250,250)
-        C_turtle.setposition(280,loca)
-        self.group.append(C_turtle)
-
-
-
+        self.setposition(280,loca)
 
 
 
 
     def move_car(self):
+        self.forward(MOVE_INCREMENT)
         print("trigger")
 
-        for i in self.group:
-             print("in loop")
-        #     x=self.group[i].xcor()+MOVE_INCREMENT
-        #     y=self.group[i].ycor()
-        #     self.group[i].setposition(x,y)
-        #     print(self.group[i])
 
