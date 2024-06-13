@@ -23,7 +23,7 @@ while game_is_on:
     carA = CarManager()
     carA.start_car()
     car_group.append(carA)
-    print(car_group)
+    #print(car_group)
     for i in range (6):
         time.sleep(0.1)
         screen.update()
@@ -31,8 +31,19 @@ while game_is_on:
         for i in car_group:
             x=i.xcor()+10
             y=i.ycor()
-            print(x,y)
+            #print(x,y)
             i.move_car()
+
+        for i in car_group:
+            pos=i.position()
+            print(pos)
+            if Crosser.distance(pos)<50:
+                game_is_on=False
+
+
+Crosser.setposition(0,-250)
+
+
 
 
 

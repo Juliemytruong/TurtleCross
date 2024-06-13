@@ -29,6 +29,6 @@ class CarManager(Turtle):
 
     def move_car(self):
         self.forward(MOVE_INCREMENT)
-        print("trigger")
+       # print("trigger")
 
 
