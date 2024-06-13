@@ -38,10 +38,11 @@ while game_is_on:
             pos=i.position()
             print(pos)
             if Crosser.distance(pos)<50:
-                game_is_on=False
+                Crosser.setposition(0, -280)
 
 
-Crosser.setposition(0,-250)
+
+
 
 
 
