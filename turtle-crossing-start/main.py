@@ -16,16 +16,16 @@ Crosser.start()
 
 screen.onkey(Crosser.move,"Up")
 
-
+score=Scoreboard()
 
 game_is_on = True
 while game_is_on:
-    score=Scoreboard()
+
     carA = CarManager()
     carA.start_car()
     car_group.append(carA)
     #print(car_group)
-    for i in range (6):
+    for i in range (4):
         time.sleep(0.1)
         screen.update()
 
@@ -38,11 +38,12 @@ while game_is_on:
         for i in car_group:
             pos=i.position()
             print(pos)
-            if Crosser.distance(pos)<0:
+            if Crosser.distance(pos)<20:
                 Crosser.setposition(0, -280)
 
         if Crosser.ycor()>280:
             score.add_score()
+            Crosser.setposition(0,-280)
 
 
 
